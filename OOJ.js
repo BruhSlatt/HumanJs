@@ -64,7 +64,7 @@ class NinJesus {
         return this.nameInsideNinJesus+"'s speed level is "+ this.speeds
     }
 }
-
+// OOP inheritence- objects inheriting properties and methods from classes
 let itachi = new NinJesus("Itachi", "Sharingan", "fast" )
 
 display(itachi.name());
