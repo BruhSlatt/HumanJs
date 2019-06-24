@@ -20,7 +20,53 @@ function sneak(Sneak){
     return "Ninja sneaks "+ Sneak+ " spaces."
 }
 
-display(name("Sasuke"));
-display(jump(7));
-display(sneak(5));
-display(attack("Tickle"));
+// Oject Oriented Programing
+// Incapsultaion- grouping all behavior 
+const ninja = {
+    name(name){
+        return "Hi, my name is "+ name+".";
+    },
+    jump(Jump){
+        return "Ninja jumps "+ Jump+ " spaces."
+    },
+    attack(Attack){
+        return Attack+" did 4 damage"
+    },  
+    sneak(Sneak){
+        return "Ninja sneaks "+ Sneak+ " spaces."
+    },
+}
+
+// display(ninja.name("Sasuke"));
+// display(ninja.jump(7));
+// display(ninja.sneak(5));
+// display(ninja.attack("Tickle"));
+
+
+
+// create a class for instantiating ninjas
+// OOP Abstraction- hiding complexity from the user
+class NinJesus {
+    constructor(name, attack, speed){
+        this.nameInsideNinJesus = name;
+        this.attacks = attack;
+        this.speeds = speed;
+
+    }
+
+    name(){
+        return "Aye, my name is " + this.nameInsideNinJesus
+    }
+    attack(){
+        return this.nameInsideNinJesus+ " can use "+ this.attacks
+    }
+    speed(){
+        return this.nameInsideNinJesus+"'s speed level is "+ this.speeds
+    }
+}
+
+let itachi = new NinJesus("Itachi", "Sharingan", "fast" )
+
+display(itachi.name());
+display(itachi.speed());
+display(itachi.attack());
