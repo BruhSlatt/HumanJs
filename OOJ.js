@@ -67,9 +67,6 @@ class NinJesus {
 // OOP inheritence- objects inheriting properties and methods from classes
 // let itachi = new NinJesus("Itachi", "Sharingan", "fast" )
 
-// display(itachi.name());
-// display(itachi.speed());
-// display(itachi.attack());
 
 
 // OOP Polymorphism- overrides shared behaviors form parents.
@@ -86,3 +83,7 @@ class UchihaJesus extends NinJesus {
     }
 }
 let itachi = new UchihaJesus("Itachi", "Sharingan", "fast" );
+display(itachi.name());
+display(itachi.speed());
+display(itachi.attack());
+display(itachi.village);
